@@ -1,10 +1,9 @@
 name: SMC Crypto Signal Bot
 
 on:
-  schedule:
-    - cron: '*/15 * * * *'
   workflow_dispatch:
-
+  schedule:
+    - cron: '*/30 * * * *'
 jobs:
   scan:
     runs-on: ubuntu-latest
